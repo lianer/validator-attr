@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>radio</title>
+	<script src="../jquery-1.9.0.js"></script>
+	<script src="../validator-attr.js"></script>
+</head>
+<body>
+	<p class="title">标签，最少选择2个，最多选择3个</p>
+
+	<form action="" id="form">
+		<select name="tab" multiple=""
+			data-rule-range="2,3"
+			data-msg-range="最少选择2个，最多选择3个"
+			>
+			<option value="javascript">javascript</option>
+			<option value="html">html</option>
+			<option value="css">css</option>
+			<option value="animate">animate</option>
+		</select>
+
+		<input type="submit" value="提交">
+	</form>
+
+	<p id="tip"></p>
+
+	<script>
+		new Validator("#form", {
+			success: function (form) {
+				tip.innerHTML = "success"
+			},
+			error: function (msg) {
+				tip.innerHTML = msg
+			}
+		})
+	</script>
+</body>
+</html>

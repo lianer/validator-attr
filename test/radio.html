@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>radio</title>
+	<script src="../jquery-1.9.0.js"></script>
+	<script src="../validator-attr.js"></script>
+</head>
+<body>
+	<p class="title">爱好，必选</p>
+
+	<form action="" id="form">
+		<input type="checkbox" value="跳舞" name="hobby"
+			data-rule-required="1"
+			> 跳舞
+		<input type="checkbox" value="唱歌" name="hobby"
+			data-rule-required="1"
+			> 唱歌
+		<input type="checkbox" value="游戏" name="hobby"
+			data-rule-required="1"
+			> 游戏
+		<input type="checkbox" value="追剧" name="hobby"
+			data-rule-required="1"
+			> 追剧
+
+		<input type="submit" value="提交">
+	</form>
+
+	<p id="tip"></p>
+
+	<script>
+		new Validator("#form", {
+			success: function (form) {
+				tip.innerHTML = "success"
+			},
+			error: function (msg) {
+				tip.innerHTML = msg
+			}
+		})
+	</script>
+</body>
+</html>
