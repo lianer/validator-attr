@@ -4,7 +4,7 @@
  * @author lianer
  * @version 1.0.2
  * @description 实现element attribute表单验证，依赖 jQuery or Zepto，ie8+
- * 
+ *
  * @example
  *
  * <form action="/" method="post" id="form">
