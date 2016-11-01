@@ -3,7 +3,7 @@
  * 
  * @author lianer
  * @version 1.0.3
- * @description 实现element attribute表单验证，依赖 jQuery or Zepto，ie8+
+ * @description 实现element attribute表单验证，依赖 jQuery or Zepto
  *
  * @example
  *
