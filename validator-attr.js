@@ -156,7 +156,7 @@
 	Validator.addMethod("rangelength", function (value, elem, param) {
 		var length = value.length;
 		var range = param.split(",");
-		return length >= range[0].trim() && length <= range[1].trim();
+		return length >= $.trim(range[0]) && length <= $.trim(range[1]);
 	}, "字数不够或超出");
 
 	Validator.addMethod("pattern", function (value, elem, param) {
