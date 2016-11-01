@@ -1,6 +1,10 @@
 # validator-attr.js
 
-实现element attribute表单验证，依赖 jQuery or Zepto，ie8+
+![](http://shields.hust.cc/build-passing-green.svg)
+![](http://shields.hust.cc/version-1.0.2-blue.svg)
+![](http://shields.hust.cc/dependence-jQuery-blue.svg)
+
+实现element attribute表单验证，依赖 jQuery or Zepto
 
 ## Usage
 ```html
